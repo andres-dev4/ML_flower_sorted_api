@@ -104,13 +104,17 @@ class MlFlowersView(views.APIView):
         """
         Endpoint to calculate clasified base in values input
         
-        This API receives a list of lists where each list must contain 4 float values
-        These values represent the features of the flowers to be classified
-        by the pre-trained machine learning model 'iris_classifier'
+        This API receives a Dataset where each variables represent the features of the flowers to be classified
+        and target variable species iris.a
+        The machine learning that we us for clasification is 'XGBOOST'
 
-        values ​​define the representation the parameters
+        **Features**
 
             'SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']
+
+        **Target Value**
+
+            Especies
 
         example response [200]:
 

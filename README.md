@@ -1,9 +1,9 @@
 # ABIChallenge_andres_antonio 🤖
-This repository hosts a flower classifier system integrated into Django, utilizing a pre-trained binary model. 
+This repository hosts a flower classifier system integrated into Django, utilizing a pre-trained model. 
 
 ##  MLFlowers🌷 Clasifications 🌻
 
-The project is a web application developed with Django that integrates a pre-trained flower classifier. Using a binary model, it predicts the species of a flower based on specific features. In addition to the classification functionality, the system offers a user-friendly and accessible interface for end users. The application streamlines the deployment of the flower classifier, providing a robust and easy-to-use solution. With a combination of modern technologies and efficient implementation, the project aims to provide a useful tool for both botanical enthusiasts and practical applications in flower classification.
+The project is a web application developed with Django that integrates a pre-trained flower classifier. It predicts the species of a flower based on specific features. In addition to the classification functionality, the system offers a user-friendly and accessible interface for end users. The application streamlines the deployment of the flower classifier, providing a robust and easy-to-use solution. With a combination of modern technologies and efficient implementation, the project aims to provide a useful tool for both botanical enthusiasts and practical applications in flower classification.
 
 Adding url from kaggle about ml model selected to this project
 
