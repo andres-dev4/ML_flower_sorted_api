@@ -8,4 +8,5 @@ services:
       - .:/app
     ports:
       - "8000:5000"
-    command: "python manage.py runserver 0.0.0.0:5000"
+    #to exec test model
+    command: sh -c "python manage.py test mlmodel && python manage.py runserver 0.0.0.0:5000"

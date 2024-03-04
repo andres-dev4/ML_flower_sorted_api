@@ -13,12 +13,13 @@ In the fordel **mllab** you can found all files related lab kaggle exercices
 
 ## Technologies Used 🧰
 
-* **python**
+* **python** 🐍
 * **Django**
 * **Django Rest Framework**
 * **Swagger**
 * **Redoc**
 * **Python pickle**
+* **PostgreSQL**  🐘
   
 ## Installation & Use 🙌
 
@@ -38,7 +39,7 @@ You need have in your computer this tools
 
 You need clone this project with the next link 
 
-    git@github.com:andres-dev4/ABIChallenge_andres_antonio.git
+    https://github.com/andres-dev4/ABIChallenge_andres_antonio.git
 
 then you run this project with the follow command line
 
