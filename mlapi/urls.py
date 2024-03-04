@@ -21,7 +21,7 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
 
-from mlmodel.views  import mlflowers
+from mlmodel.views  import MlFlowersView
 
 
 schema_view = get_schema_view(
@@ -71,7 +71,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/mlflowers',mlflowers.as_view(),name='mlflowers'),
+    path('api/mlflowers',MlFlowersView.as_view(),name='mlflowers'),
     path('api/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     ]

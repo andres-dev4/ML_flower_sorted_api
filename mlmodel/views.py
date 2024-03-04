@@ -1,31 +1,20 @@
 from logging import exception
 from django.http import JsonResponse
-from django.shortcuts import render
+
 from mlmodel.core.history_data_interactor import HistoryDataInteractor
 import pandas as pd
-
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-# Create your views here.
-
-from rest_framework.decorators import api_view
-from rest_framework import views
-from django.views.decorators.csrf import csrf_exempt
-from django.utils.decorators import method_decorator
-from mlmodel.serializers.mlmodel import FlowerSerializer
-
-
-from drf_yasg.views import get_schema_view
-from drf_yasg import openapi
-from drf_yasg.utils import swagger_auto_schema
-
-from rest_framework.response import Response
-from rest_framework import status
-
 from mlmodel.core.mlmodelflower import mlflower
 
-class mlflowers(views.APIView):
+from rest_framework import status
+from rest_framework import views
+from mlmodel.serializers.mlmodel import FlowerSerializer
+
+from drf_yasg.utils import swagger_auto_schema
+from rest_framework import status
+
+
+
+class MlFlowersView(views.APIView):
     """
     This class provides an API interface for interacting with a machine learning model for flower analysis.
 
@@ -33,9 +22,6 @@ class mlflowers(views.APIView):
 
         - get: Retrieves the execution history of the model grouped by username.
         - post: Performs a prediction using the machine learning model and returns the result.
-    Parameters:
-
-        sdfsdf
     """
 
 
