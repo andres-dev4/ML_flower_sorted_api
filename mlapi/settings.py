@@ -79,21 +79,13 @@ WSGI_APPLICATION = 'mlapi.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'usetfwtz',
-        'USER': 'usetfwtz',#in this case for ending test i setting user and pass directly
-        'PASSWORD': '1os3BGK-8byK7RJrW2nyqC6m9YMPa8Ao',
-        'HOST': 'bubble.db.elephantsql.com',  # O la dirección IP de tu servidor de base de datos
-        'PORT': '5432',       # Puerto predeterminado de PostgreSQL
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "challengeDB",
     }
 }
 
-if 'test' in sys.argv:
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',  # Ruta a tu archivo SQLite
-    }
+
 
 
 

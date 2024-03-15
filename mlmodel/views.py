@@ -100,7 +100,7 @@ class MlFlowersView(views.APIView):
 
   
     @swagger_auto_schema(request_body=FlowerSerializer())
-    def post(self, request, format=None):
+    def post(self, request, format=None) -> JsonResponse:
         """
         Endpoint to calculate clasified base in values input
         
