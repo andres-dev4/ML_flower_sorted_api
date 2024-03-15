@@ -6,6 +6,7 @@ class history_predictions(models.Model):
     """
     history predictions model to migrate
     and generate objecst typr table in db
+    Mensajes history
     """
     id = models.AutoField(primary_key=True)
     user_name = models.CharField(max_length=100)
