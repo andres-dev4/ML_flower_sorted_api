@@ -26,7 +26,7 @@ class LibAdapterTestCase(TestCase):
         This test function verifies the functionality of the model when processing arrays in batches 
         """
         adapter = lib_adapter()
-        print("check with multi list : [[5.3 ,1.5 ,9.5 ,1.1], [1.3 ,1.5 ,1.5 ,1.1]]")
+        print("check with multi list : [[5.3 ,1.5 ,9.5 ,1.1], [1.3 ,1.5 ,1.5 ,1.1]] dict")
         input_values=[[5.3 ,1.5 ,9.5 ,1.1], [1.3 ,1.5 ,1.5 ,1.1]]
         response = adapter.prediccions(input_values)
         assert isinstance(response, list), "La respuesta no es una lista."
