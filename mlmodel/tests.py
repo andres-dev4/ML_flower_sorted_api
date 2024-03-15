@@ -2,6 +2,13 @@ from django.test import TestCase
 from mlmodel.adapters.external_lib_adapter import lib_adapter
 
 class LibAdapterTestCase(TestCase):
+    """
+    class to testing adapter and mlmodel
+
+    To exec only run project locally and run follo comand
+
+        python manage.py test mlmodel
+    """
     def test_prediccions_one_by_one(self):
         """
         This test function verifies the functionality of the model when processing arrays individually

@@ -10,7 +10,7 @@ class HistoryDataInteractor:
 
     def add_register(self, data:list,name:str):
         """
-        principal function to save data interactive direcly with model
+        principal function to save data interactive direcly with model iris classification
         """
 
         for item in data:
