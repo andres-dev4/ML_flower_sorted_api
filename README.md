@@ -1,4 +1,4 @@
-# ABIChallenge_andres_antonio 🤖
+# andres_antonio 🤖
 This repository hosts a flower classifier system integrated into Django, utilizing a pre-trained model. 
 
 ##  MLFlowers🌷 Clasifications 🌻
@@ -35,11 +35,6 @@ You need have in your computer this tools
 * **Jupiter NoteBook**
 * **Docker**  
 
-### How to use 👷
-
-You need clone this project with the next link 
-
-    https://github.com/andres-dev4/ABIChallenge_andres_antonio.git
 
 then you run this project with the follow command line
 
