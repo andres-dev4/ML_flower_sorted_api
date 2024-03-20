@@ -52,7 +52,8 @@ class lib_adapter:
         
         _model = self.singleton_instance
         print("el model")
-        print(_model)
+        print(_model.__dict_)
+        print(_model.__dir_)
 
         inputs = pd.DataFrame(value_inputs, columns=['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm'])
 
