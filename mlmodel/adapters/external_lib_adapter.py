@@ -17,7 +17,9 @@ class singleton_load_model:
         """
         class to load model by singleton
         """
+        print("Check if model is load  by singleton")
         if cls._instance is None:
+            print("Model not loaded , proccest to load by singleton")
             cls._instance = super().__new__(cls)
             file_path = os.path.join(os.path.dirname(__file__), NAME_MODEL)
             if os.path.exists(file_path):
@@ -51,10 +53,7 @@ class lib_adapter:
         logging.info("start predicctions in lib adapters")
         
         _model = self.singleton_instance
-        print("el model")
-        print(_model.model.__dict__)  # Accede al atributo model directamente
-        print(dir(_model.model))
-
+        print("Exec model")
 
         inputs = pd.DataFrame(value_inputs, columns=['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm'])
 
