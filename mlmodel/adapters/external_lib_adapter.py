@@ -50,11 +50,13 @@ class lib_adapter:
         """
         logging.info("start predicctions in lib adapters")
         
-        model = self.singleton_instance
+        _model = self.singleton_instance
+        print("el model")
+        print(_model)
 
         inputs = pd.DataFrame(value_inputs, columns=['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm'])
 
-        pred = model.predict(inputs)
+        pred = _model.model.predict(inputs)
 
         predicciones = pd.DataFrame(pred, columns=['pivot_Iris-setosa', 'pivot_Iris-versicolor', 'pivot_Iris-virginica'])
 
