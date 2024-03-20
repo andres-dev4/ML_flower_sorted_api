@@ -25,7 +25,7 @@ class singleton_load_model:
                     cls._instance.model = pickle.load(archivo)
             else:
                 raise FileNotFoundError(f"El archivo '{file_path}' no existe.")
-        return cls._instance.model
+        return cls._instance
 
 class lib_adapter:
     """
