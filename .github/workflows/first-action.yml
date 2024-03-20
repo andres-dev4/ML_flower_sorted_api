@@ -1,24 +1,12 @@
 name: First WorkFlow
 on: workflow_dispatch
 jobs:
-  test:
-    name: Run Tests
+  first-job:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Run tests
-      run: |
-        python manage.py test mlmodel
+    - name: Print greeting
+      run: echo "hello world"
+    - name: Prints goodbye
+      run: echo "Done - Bye!"
+    - name: Prints goodbye other agains
+      run: echo "Done - Bye! agains"
