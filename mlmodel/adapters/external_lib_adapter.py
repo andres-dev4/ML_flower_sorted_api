@@ -50,10 +50,11 @@ class lib_adapter:
         """
         logging.info("start predicctions in lib adapters")
         
-        _model = self.singleton_instance()
+        _model = self.singleton_instance
         print("el model")
-        print(_model.__dict__)
-        print(_model.__dir__)
+        print(_model.model.__dict__)  # Accede al atributo model directamente
+        print(dir(_model.model))
+
 
         inputs = pd.DataFrame(value_inputs, columns=['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm'])
 
