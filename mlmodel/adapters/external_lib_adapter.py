@@ -55,6 +55,7 @@ class lib_adapter:
         print(_model.model.__dict__)  # Accede al atributo model directamente
         print(dir(_model.model))
 
+
         inputs = pd.DataFrame(value_inputs, columns=['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm'])
 
         pred = _model.model.predict(inputs)
